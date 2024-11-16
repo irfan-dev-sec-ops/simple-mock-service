@@ -1,0 +1,7 @@
+node_modules
+.idea/
+*.iml
+ssl/
+.DS_Store
+.vscode/
+dist/

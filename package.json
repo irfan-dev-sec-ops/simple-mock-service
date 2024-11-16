@@ -1,0 +1,25 @@
+{
+  "name": "simple-mock",
+  "version": "1.0.0",
+  "description": "mock for rest services",
+  "main": "index.js",
+  "dependencies": {
+    "@vendia/serverless-express": "^4.12.6",
+    "crypto-randomuuid": "1.0.0",
+    "json-server": "^0.17.4",
+    "morgan-body": "^2.6.9"
+  },
+  "scripts": {
+    "start": "node function/local.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json",
+    "api"
+  ],
+  "author": "Irfan Ali Shaik",
+  "license": "MIT",
+  "devDependencies": {
+    "lowdb": "^7.0.1"
+  }
+}
