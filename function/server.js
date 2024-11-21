@@ -66,7 +66,7 @@ server.get(baseUrl + "students/:id", (req, res) => {
     if (student) {
         res.status(200).json(student);
     } else {
-        res.status(404).json({ error: "Student not found" });
+        res.status(404).json({ code: 404, message: "Student not found" });
     }
 });
 
@@ -75,7 +75,7 @@ server.post(baseUrl + "students", (req, res, next) => {
     if (typeof id === 'number' && typeof name === 'string' && typeof age === 'number') {
         next();
     } else {
-        res.status(400).json({ error: "Invalid student object" });
+        res.status(400).json({ code: 400, error: "Invalid student object" });
     }
 }, (req, res) => {
     const newStudent = req.body;
